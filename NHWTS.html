@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pollution Awareness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="icon" href="https://nhwts.nic.in/nhwts/images/master/cpcb.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav"></div>
+        <div class="nav" id="nav"></div>
+            <script>
+                // JavaScript to load the nav.html content into the placeholder
+                document.addEventListener('DOMContentLoaded', function() {
+                    fetch('nav.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('nav').innerHTML = data;
+                        });
+                });
+            </script>
+    </div>
+
+        <!-- Hero Section -->
+<section class="hero-new">
+    <div class="animated-bg"></div>
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1 class="hero-title">Central Pollution <span>Control Board</span></h1>
+        <p class="hero-subtext">Pollution is destroying our environment. Together, we can make a change.</p>
+        <div class="cta-buttons">
+            <a href="#learn-more" class="cta-btn-primary">Learn More</a>
+            <a href="newabout.html" class="cta-btn-secondary">NHWTS</a>
+        </div>
+        <img src="https://images.pexels.com/photos/4167564/pexels-photo-4167564.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pollution" class="image">
+    <img src="https://images.pexels.com/photos/2827735/pexels-photo-2827735.jpeg?auto=compress&cs=tinysrgb&w=600" alt="pollution" class="image">
+    <img src="https://media.gettyimages.com/id/899102868/photo/sad-polar-bear.jpg?s=612x612&w=0&k=20&c=Pq76ZmY3VbPE_t_JQvDwB2f4B427tkd4Nc_0t43YF-I=" alt="pollution" class="image">
+    <img src="https://media.gettyimages.com/id/469339221/photo/power-plant.jpg?s=612x612&w=0&k=20&c=r90suXhp5U5L-qny6BE4ZmfDX6pHuKx-nZkOjQBEuuY=" alt="pollution" class="image">
+
+    </div>
+
+    <div class="scroll-indicator">Scroll Down<i class="fas fa-chevron-down"></i></div>
+</section>
+
+<div class="slider">
+    <marquee behavior="scroll" direction="left">Central Pollution Control Board, Ministry of Environment, Forest and Climate Change, Parivesh Bhawan, East Arjun Nagar, Delhi-110032.&emsp;Mobile No.- 011-43102319/326</marquee>
+</div>
+
+    <!-- Info Section with Cards -->
+    <section id="learn-more" class="info">
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/intense-column-smoke-coming-out-from-factory-pipe-waterscape-ground_910608-3831.jpg" alt="Pollution Image">
+            <h2>The Impact of Pollution</h2>
+            <p>Pollution affects every aspect of life. We must act now to prevent further damage to our planet's air, water, and ecosystems.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/intense-column-smoke-coming-out-from-factory-pipe-waterscape-ground_910608-3831.jpg" alt="Pollution Image">
+            <h2>The Impact of Pollution</h2>
+            <p>Pollution affects every aspect of life. We must act now to prevent further damage to our planet's air, water, and ecosystems.</p>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/premium-photo/intense-column-smoke-coming-out-from-factory-pipe-waterscape-ground_910608-3831.jpg" alt="Pollution Image">
+            <h2>The Impact of Pollution</h2>
+            <p>Pollution affects every aspect of life. We must act now to prevent further damage to our planet's air, water, and ecosystems.</p>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+<section id="cta" class="cta-section">
+    <div class="cta-content">
+        <h2 class="cta-heading">Take Action Today!</h2>
+        <p class="cta-description">Rules and Guidelines to follow</p>
+        <div class="cta-buttons">
+            <a href="rules.html" class="cta-btn">HW Rules</a>
+            <a href="guideline.html" class="cta-btn">Guidelines</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you! Whether you have a question about pollution, solutions, or just want to get involved, drop us a message below.</p>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <input id="message" name="message" rows="5" required placeholder="Your Message"></input>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-send">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt icon" style=" color: #042b52; vertical-align: middle; margin-top: 20px; height: 20px;"></i><p>Central Pollution Control Board<br>
+                      Ministry of Environment, Forest and Climate Change<br>
+                      Parivesh Bhawan, East Arjun Nagar, Delhi-110032</p>
+            </div>
+            <div class="info-item">
+                <p><i class="fas fa-phone-alt icon" style="color: #042b52; margin-right: 8px; border-radius: 50%;
+    backdrop-filter: blur(100px);"></i> 011-43102319/326</p>
+            </div>
+            <div class="info-item">
+                <a href="nhwts.cpcb@gov.in" class="email" style="color: white;"><p><i class="fas fa-envelope icon" style="margin-right: 8px; color: #042b52;"></i>  Email</p></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-Slider-->
+    <div class="slide">
+        <marquee behavior="scrolling" direction="Right">
+            <img src="https://nhwts.nic.in/nhwts/images/master/swachhbharat.png" alt="swachhbharat" class="img1" style="margin-right: 10px; margin-bottom: 0;vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/digitalindia.png" alt="digitalindia" class="img2" style="height: 35px; width: 75px; margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/datagovin.png" alt="datagovin" class="img3" style=" margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/indiagovin.png" alt="indiagovin" class="img4" style="margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/mygov.png" alt="mygov" class="img5" style="height: 35px; width: 90px; margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/meity.png" alt="meity" class="img6" style="margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/pmindia.png" alt="pmindia" class="img7" style="margin-right: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/footerlink-15.png" alt="NIC" class="img8" style="height: 35px; width: 115px; margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+            <img src="https://nhwts.nic.in/nhwts/images/master/g20logo.png" alt="g20logo" class="img9" style="height: 35px; width: 80px; margin-right: 10px; margin-bottom: 0; vertical-align: middle;">
+        </marquee>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Central Pollution Control Board</p>
+        <p class="developer">Developed By Geo-Spatial Technology and Services Division, National Informatics Centre (NIC)</p>
+        <div class="social-icons">
+            <a href="#"><img src="https://www.pngmart.com/files/15/Circle-Facebook-Logo-PNG-Background-Image.png" alt="Facebook"></a>
+            <a href="#"><img src="https://www.freeiconspng.com/uploads/logo-twitter-circle-png-transparent-image-1.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338392_1280.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>

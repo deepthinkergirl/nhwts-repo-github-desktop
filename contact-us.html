@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box;} 
+        input[type=text], select, textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=number], select, textarea {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #058be4;;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: lightskyblue;
+        }
+
+        .head{
+            border-radius: 5px;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 
+            0 0 5px #058be4, 
+            0 0 10px #058be4, 
+            0 0 15px #058be4, 
+            0 0 20px #058be4, 
+            0 0 25px #058be4, 
+            0 0 30px #058be4, 
+            0 0 35px #058be4;
+        }
+        .email:hover {
+            text-decoration: underline; /* Add underline on hover */
+            color: #0056b3; /* Darker blue on hover */
+        }
+        .container{
+            float: left;
+            width: 50%;
+            padding: 10px;
+            font-size: 1.125rem;
+            font-style: normal;
+            font-family: Bree Serif;
+            font-weight: 600;
+            line-height: 1;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .form_label-required{
+            display: inline;
+            position: relative;
+            color: #da0f13;
+        }
+        .info{
+            display: inline block;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% {transform: scale(1);
+                opacity: 1;
+            }
+            50% {transform: scale(1.1);
+                opacity: 0.7;
+            }
+            100% {transform: scale(1);
+                opacity: 1;}
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Contact</title>
+    <link rel="icon" type="image" href="https://nhwts.nic.in/nhwts/images/master/cpcb.jpg">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        // JavaScript to load the nav.html content into the placeholder
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
+    <h1 class="head">Contact Us</h1>
+    <div class="row">
+    <div class="container">
+        <form action="">
+            <label for="name">Your Name:</label>
+            <span class="form_label-required" title="This field is required">*</span>
+            <input type="text" id="name" name="name" required placeholder="Your Name"><br>
+            <label for="mobile no">Mobile No.:</label>
+            <span class="form_label-required" title="This field is required">*</span>
+            <input type="number" name="Mobile No." id="mobile no." required placeholder="Mobile no."><br>
+            <label for="Email-id">Email-id:</label>
+            <span class="form_label-required" title="This field is required">*</span>
+            <input type="text" id="Email-id" name="Email-id" required placeholder="Email-id"><br>
+            <label for="subject">Subject:</label>
+            <span class="form_label-required" title="This field is required">*</span>
+            <input type="text" id="subject" name="subject" required placeholder="Subject"><br>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required placeholder="Description"><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <div class="container">
+        <div class="info">
+        <h3><i class="material-icons" style=" color: red; vertical-align: middle;">location_on</i>Address</h3>
+        <p>Central Pollution Control Board <br>
+        Ministry of Environment, Forest and Climate Change <br>
+        Parivesh Bhawan, East Arjun Nagar, Delhi-110032</p>
+        <h3><i class="fas fa-phone-alt" style="font-size: 20px; color: #000; margin-right: 8px;"></i>Mobile</h3>
+        <p>011-43102319/326</p>
+        <h3><i class="fas fa-envelope" style="font-size: 20px; margin-right: 8px;"></i>Email</h3>
+        <a href="nhwts.cpcb@gov.in" class="email">Email</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

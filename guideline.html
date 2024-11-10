@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            height: 1750px;
+            top: 160px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7); /* Dark overlay for better readability */
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .head {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(90deg, #FF9933 33.33%, #ffffff 33.33%, #ffffff 66.66%, #138808 66.66%);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .guide {
+            list-style: none;
+            padding: 0;
+        }
+
+        .guide li {
+            margin: 15px 0;
+        }
+
+        .guide a {
+            text-decoration: none;
+            display: block;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .guide a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guidelines</title>
+    <link rel="icon" type="image" href="https://nhwts.nic.in/nhwts/images/master/cpcb.jpg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav"></div>
+        <div class="nav" id="nav"></div>
+            <script>
+                // JavaScript to load the nav.html content into the placeholder
+                document.addEventListener('DOMContentLoaded', function() {
+                    fetch('nav.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('nav').innerHTML = data;
+                        });
+                });
+            </script>
+    </div>    
+        <div class="overlay"></div>
+        <div class="content">
+    <h1 class="head">Technical Guidelines</h1>
+    <ol class="guide">
+        <li><a href="https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS80MDBfMTcwMzg0ODIzMV9tZWRpYXBob3RvMTI0MjkucGRm" target="_blank">Flash New ImageGuidelines on Management of Pyro metallurgical Slags (Iron & Steel Slags)</a></li>
+        <li><a href="https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8zODFfMTY5MjM1MTQ5M19tZWRpYXBob3RvMjA5NTcucGRm" target="_blank">Guidelines on Management of Pyro-metallurgical Slags (Copper Smelters)</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_6.pdf" target="_blank">Guidelines on Handling and Management of Red Mud generated from Alumina Plants</a></li>
+        <li><a href="https://cpcb.nic.in/openpdffile.php?id=TGF0ZXN0RmlsZS8zNjhfMTY4MDI0MTY0MV9tZWRpYXBob3RvMjQ5MjgucGRm" target="_blank">Revised Guidelines for Environmentally Sound Facilities for Handling and Scrapping of End-of-Life Vehicles (ELVs)</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_5.pdf" target="_blank">Guidelines for Handling and Management of Flue Gas Desulphurized (FGD) Gypsum</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_4.pdf" target="_blank">Protocol for assessing proposals of Development Projects in buffer zone of closed TSDF</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_3.pdf" target="_blank">Guidance Document for Conducting Environmental Audit of Common/Captive Treatment, Storage and Disposal Facilities (TSDFs)</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/Projects/Bio-Medical-Waste/SOP_covid_1.pdf" target="_blank">SOP for disposal of BMW including pandemic medical waste through incineration in common hazardous waste treatment, storage and disposal facility</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_2.pdf" target="_blank">Guidelines on Framework on Identification of Materials Generated from Industrial Processes as Wastes or By-products</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_HW_1.pdf" target="_blank">Enforcement Framework for Effective Implementation of Hazardous and Other Wastes (Management and Transboundary Movement) Rules, 2016</a></li>
+        <li><a href="https://cpcb.nic.in/NGTMC/HW/Guidelines_Inventories_HW_21.06.2019.pdf" target="_blank">Guidelines for Preparation of Inventories on Hazardous and Other Waste Generation and their Management"</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_Handling_Processing_and_Recycling_ELV_11.03.2019.pdf" target="_blank">Guidelines for Environmentally Sound Facilities for Handling, Processing and Recycling of End-of- Life Vehicles (ELV)</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/GUIDELINES-ON_CO-ProcessinginCement.pdf" target="_blank">Revised Guidelines for Pre-Processing and Co-Processing of Hazardous and Other Wastes in Cement Plant as per H&OW(M & TBM) Rules, 2016</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/Guidelines_Environmenal_Damages_Costs_200116.pdf" target="_blank">Guidelines on Implementing Liabilities for Environmental Damages due to Handling & Disposal of Hazardous Waste and Penalty</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MDJfc2VjMTFfMjkucGRm" target="_blank">Guidelines for Common Hazardous Waste Inceneration</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MTRfc2VjMTFfMTcucGRm">Criteria for Hazardous Waste Landfills</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9HdWlkZWxpbmVmb3JNLUgtVXRpbGktRGlzcG9zYWxvZlBob3NwaG9neXBzdW1mcm9tUEFQbGFudHMucGRm">Guidelines for Management, Handling, Utilisation and Disposal of Phosphogypsum Generated from Phosphoric Acid Plants</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9OZXdJdGVtXzE0OV9Qcm90b2NvbC5wZGY=" target="_blank">Protocol for performance Evaluation and Monitoring of the Common Hazardous Waste Treatment Storage and Disposal Facilities including Common Hazardous Waste Incinerators</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MjBfc2VjMTFfMTEucGRm" target="_blank">Guidelines for Setting up of Operating Facility: Hazardous Waste Management</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MDBfc2VjMTFfMzEyLnBkZg==" target="_blank">Guidelines for Propoer Functioning and Upkeep of Disposal Sites</a></li>
+        <li><a href="https://cpcb.nic.in/uploads/hwmd/GuidelinesforEnviron_soundRecyclingHW2010.PDF" target="_blank">Guidelines for Environmental Sound Recycling of Hazardous Waste as per Schedule-V of Hazardous Waste (Management Handling and Transboundary Movement) Rules, 2008</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MDhfc2VjMTFfMjMucGRm" target="_blank">Guidelines for the Selection of Site for Landilling</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl8zOTlfc2VjMTFfMzIucGRm" target="_blank">Guidelines for Transportation of Hazardous Wastes</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9OZXdJdGVtLTEzMS1HdWlkZWxpbmUtZm9yLXN0b3JhZ2Utb2YtaW5jaW5lcmFibGUtSFcucGRm" target="_blank">Guidelines for Storage of Incenerable Hazardous Wastes by the Operators of Common Hazardous Waste Treatment, Storage and Disposal Facilities and Captive HW Incinerators</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC9QdWJsaWNhdGlvbl80MDZfc2VjMTFfMjUucGRm" target="_blank">Guidelines for Conducting Envionmental Impact Assessment : Site Selection for Common Hazardous Waste Management Facility</a></li>
+        <li><a href="https://cpcb.nic.in/displaypdf.php?id=aHdtZC8xOS5wZGY=" target="_blank">Manual for 'Sampling, Analysis and Characterization of Hazardous Wastes'</a></li>
+    </ol>
+    </div>
+</body>
+</html>

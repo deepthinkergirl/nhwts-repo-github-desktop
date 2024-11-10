@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+      * {
+      box-sizing:border-box;
+      }
+
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      }
+
+    i {
+    color: #4CAF50;
+    font-size: 24px; 
+    margin: 0 10px; 
+    animation: float 3s ease-in-out infinite;
+    }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+}
+
+      .container {
+      padding: 64px;
+      }
+
+      .row:after {
+      content: "";
+      display: table;
+      clear: both
+      }
+
+      .column1 {
+      float: left;
+      width: 66.66666%;
+      padding: 20px;
+      }
+
+      .column2 {
+      float: left;
+      width: 33.33333%;
+      padding: 20px;
+      cursor: pointer;
+      }
+      .column2:hover{
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #058be4;
+      }
+
+      .large-font {
+      font-size: 48px;
+      }
+      .xlarge-font {
+      font-size: 64px
+      }
+      img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+      }
+      @media screen and (max-width: 1000px) {
+      .column-66,
+      .column-33 {
+        width: 100%;
+        text-align: center;
+        }
+        img {
+        margin: auto;
+        }
+      }
+      h2{
+      width: auto;
+      padding: 10px;
+      border: 2px solid #333;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s ease;
+      cursor: pointer;
+      transition: transform 0.3s;
+      }
+      h2:hover{
+        border-color: #058be4;
+        box-shadow: 0 0 10px #058be4;
+        transform: scale(1.1);
+      }
+    </style>
+    <title>Pollution</title>
+    <link rel="icon" type="image" href="https://nhwts.nic.in/nhwts/images/master/cpcb.jpg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav"></div>
+        <div class="nav" id="nav"></div>
+            <script>
+                // JavaScript to load the nav.html content into the placeholder
+                document.addEventListener('DOMContentLoaded', function() {
+                    fetch('nav.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.getElementById('nav').innerHTML = data;
+                        });
+                });
+            </script>
+    </div>
+    <div class="about" style="text-align: center; display: flex; justify-content: center;">
+        <h1 style="margin-top: 100px;"><i class="fa fa-leaf" style="font-size: 24px; margin-right: 50px;"></i><i class="fa fa-leaf"></i>Pollution<i class="fa fa-leaf"></i><i class="fa fa-leaf" style="font-size: 24px; margin-left: 50px;"></i></h1>
+    </div>
+    
+    
+    <div class="container" style="border-bottom: 3px solid #058be4;">
+        <div class="row">
+            <div class="column1">
+                <h2>Cemical & Waste</h2>
+               <p>Humans use over 100,000 different chemical elements and compounds, including lead, mercury, cadmium and persistent organic pollutants. Global chemical sales are projected to almost double from 2017 to 2030. If not managed properly, chemicals can have severe impacts on human health, causing acute poisoning, cancers, birth defects, neurological disorders, hormone disruption and other grave illnesses.<br>Nearly 30 percent of the food produced worldwide is lost or wasted every year This waste contributes to biodiversity loss through habitat change, overexploitation, pollution and climate change. Food is the primary source of landfill gas and the largest component of materials sent to landfills, which leads to methane emissions that cause climate change.</p> 
+            </div>  
+            <div class="column2">
+                <img src="https://th.bing.com/th/id/OIP.aFSqvmL7Q9tPGAh0TYJ4PgHaEJ?rs=1&pid=ImgDetMain" alt="CPCB" width="335" height="471">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-bottom: 3px solid #058be4;">
+        <div class="row">
+            <div class="column2">
+                <img src="https://th.bing.com/th/id/R.3fb6919622a30577914b4e07ba14ab1e?rik=8lwbBHuLgsqeBQ&riu=http%3a%2f%2faaxisnano.com%2fwp-content%2fuploads%2f2023%2f12%2fAre-you-looking-for-cleaning-service-2.jpg&ehk=CLFO5rbpfybDSq5wWLvOULwQ%2fwgPEGy92KNsBKkLFuM%3d&risl=&pid=ImgRaw&r=0" alt="Air Quality Monitoring" style="width: 355; height: 471;">
+            </div>
+            <div class="column1">
+                <h2>Air Quality Monitoring</h2>
+                <p>is an important part of the air quality management. The National Air Monitoring Programme (NAMP) has been established with objectives to determine the present air quality status and trends and to control and regulate pollution from industries and other source to meet the air quality standards. It also provides background air quality data needed for industrial siting and towns planning.
+                <br>Besides this, CPCB has an automatic monitoring station at ITO Intersection in New Delhi. At this station Respirable Suspended Particulate Matter (RSPM), Carbon Monoxide (CO), Ozone (O3), Sulphur Dioxide (SO2), Nitrogen Dioxide (NO2) and Suspended Particulate Matter (SPM) are being monitored regularly. This information on Air Quality at ITO is updated every week.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="border-bottom: 3px solid #058be4;">
+        <div class="row">
+            <div class="column1">
+                <h2>Water Quality Monitoring</h2>
+                <p>is an important part of the Water quality management. Fresh water is a finite resource essential for use in agriculture, industry, propagation of wildlife & fisheries and for human existence. India is a riverine country. It has 14 major rivers, 44 medium rivers and 55 minor rivers besides numerous lakes, ponds and wells which are used as primary source of drinking water even without treatment. Most of the rivers being fed by monsoon rains, which is limited to only three months of the year, run dry throughout the rest of the year often carrying wastewater discharges from industries or cities/towns endangering the quality of our scarce water resources. The parliament of India in its wisdom enacted the Water (Prevention and Control of Pollution) Act, 1974 with a view to maintaining and restoring wholesomeness of our water bodies. One of the mandates of CPCB is to collect, collate and disseminate technical and statistical data relating to water pollution. Hence, Water Quality Monitoring (WQM) and Surveillance are of utmost importance.</p>
+            </div>
+            <div class="column2">
+                <img src="https://5.imimg.com/data5/XO/DX/MY-1713936/online-continuous-effluent-monitoring-system-28ocems-29-500x500.png" alt="Water Quality Monitoring" width="335" height="471">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

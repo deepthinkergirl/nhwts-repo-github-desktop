@@ -1,0 +1,558 @@
+/* Base Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Hero Section */
+.hero-new {
+    font-family: sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+
+.animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #042b52;
+    background-size: 200% 200%;
+    animation: bgAnimation 10s ease infinite;
+}
+
+@keyframes bgAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title span {
+    color: #058be4;
+}
+
+.hero-subtext {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #ddd;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-btn-primary {
+    padding: 14px 30px;
+    background-color: #058be4;
+    color: #004080;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px #004080;
+}
+
+.cta-btn-primary:hover {
+    background-color: #004080;
+    color: #058be4;
+}
+
+.cta-btn-secondary {
+    padding: 14px 30px;
+    background-color: transparent;
+    border: 2px solid #004080;
+    color: #058be4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta-btn-secondary:hover {
+    background-color: #004080;
+    color: #058be4;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.scroll-indicator i {
+    display: block;
+    font-size: 24px;
+    margin-top: 5px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.slider{
+    position: fixed;
+    background-color: #058be4;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Info Section - Cards */
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #058be4, #00c3ff);
+}
+
+.card {
+    margin: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: #042b52;
+    margin: 15px 0;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #058be4, #00c3ff);
+    color: #fff;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(135deg, #042b52, #00a6d8);
+}
+
+/* Footer */
+footer {
+    background-color: #042b52;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+.slide{
+    position: relative;
+    background-color: #042b52;
+    color: white;
+    padding: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #042b52;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 110vh;
+    justify-content: space-between;
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 0;
+}
+
+.contact-container {
+    background: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    padding: 50px;
+    border-radius: 15px;
+    margin: 30px;
+    max-width: 500px;
+    height: 70vh;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #058be4;
+}
+
+.contact-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-info h1{
+    font-size: 2.5rem;
+    color: #042b52;
+}
+
+/* Form Styling */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+    padding: 15px 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.btn-glass {
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    backdrop-filter: blur(100px);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.btn-glass:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.btn-send{
+    padding: 15px 30px;
+    color: white;
+    border: 0;
+    background: linear-gradient(90deg, #042b52 0%, rgba(5,139,228,1) 25%, rgba(0,212,255,1) 100%);
+    border-radius: 3rem;
+    transition: all 0.3s ease-in-out;
+    background-size: 300% 100%;
+    background-size: 300% 100%;
+    cursor: pointer;
+}
+
+.btn-send:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em #058be4;
+    transform: translateY(-0.15em);
+    background-size: 100% 100%;
+}
+
+/* Contact Information Styling */
+.contact-info {
+    display: flex;
+    padding: 20px;
+    background-color: #058be4;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.contact-info .info-item {
+    display: flex;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.contact-info .info-item i {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact-info .email {
+    text-decoration: none;
+    font-weight: bold;
+    translate: all 0.3s ease;
+}
+
+.contact-info .email:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-container, .contact-info {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.info-item {
+    text-align: left;
+    display: flex;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-10px);
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .contact-container h1 {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 1rem;
+    }
+}
+
+/* CTA Section Styles */
+.cta-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #042b52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cta-content {
+    max-width: 700px;
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #058be4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.55);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.cta-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Modern Button Design */
+.cta-btn {
+    padding: 14px 28px;
+    background-color: #fff;
+    color:  #058be4;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Button Hover Effect */
+.cta-btn:hover {
+    background-color: #042b52; 
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
